@@ -1,0 +1,51 @@
+form{
+  font-family: $body-font-family;
+
+  @media screen and (min-width: $desktop-breakpoint){
+    max-width: 60%;
+  }
+
+  &.landing-page-form{
+    margin: auto;
+  }
+}
+
+.form-control.inline{
+  display: flex;
+  width: 100%;
+}
+
+label{
+  @include hidden;
+}
+
+input, button{
+  font-size: 1rem;
+  padding: 1rem;
+}
+
+input[type=text], input[type=password]{
+  width: 70%;
+  border: 1px solid #aaa;
+}
+
+button{
+  width: 30%;
+  border: 0;
+  background-color: #0074A0;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: .5px;
+  transition: .2s ease opacity;
+  font-family: $body-font-family;
+
+  @media screen and (min-width: $desktop-breakpoint){
+    width: 20%;
+  }
+
+}
+
+button:hover{
+  opacity: .7;
+}

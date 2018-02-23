@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>{{ page.title }} | Northbrook Public Library</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Use your library card to explore the library's rich collection of online resources.">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/public/styles.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114656443-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '{{ site.ga-tracking-id }}');
+  </script>
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="https://www.northbrook.info" class="logo">
+        <img src="/public/logo.png">
+      </a>
+      <ul class="tools">
+        <li><a href="https://www.northrbook.info" class="tool" data-label="Website">Website</a></li>
+        <li><a href="https://www.northbrook.info/my-account" class="tool" data-label="Account">Account</a></li>
+        <li><a href="http://ccsp.ent.sirsi.net/client/en_US/nbk/" class="tool" data-label="Catalog">Catalog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="container">
+      {% if page.type == "login" %}
+        <h1 class="large">Let&rsquo;s unlock your learning</h1>
+      {% else %}
+        <h1>{{ page.title }}</h1>
+      {% endif %}
+      {{ content }}
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      {% if page.type == "login" %}
+        <div class="card-prompt">
+          <div class="card-info">
+            <h3>Don't have a card yet?</h3>
+            <p>Learn how you can get a library card and unlock your learning.</p>
+            <p><a href="https://www.northbrook.info/visit/use/cards">Learn more&rarr;</a></p>
+          </div>
+          <img src="public/card.png" class="lib-card">
+        </div>
+      {% else %}
+        <h3>Need help?</h3>
+        <p>Send us an <a href="mailto:feedback@northbrook.info">email</a> or call at 847-272-6224.</p>
+      {% endif %}
+    </div>
+  </footer>
+</body>
+</html>

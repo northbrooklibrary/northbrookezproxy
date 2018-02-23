@@ -1,0 +1,4 @@
+source: src/
+destination: dist/
+ga-tracking-id: '000'
+exclude: ['node_modules']
