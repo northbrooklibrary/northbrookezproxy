@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Access Resources | Northbrook Public Library</title>
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+  <meta name="description" content="Use your library card to explore the library's rich collection of online resources.">
+  <link href="https://fonts.googleapis.com/css?family=Lato:400,900" rel="stylesheet" type="text/css">
+  <link rel="stylesheet" href="/public/styles.css">
+  <!-- Global site tag (gtag.js) - Google Analytics -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=UA-114656443-1"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', '000');
+  </script>
+</head>
+<body>
+  <header role="banner">
+    <div class="container">
+      <a href="https://www.northbrook.info" class="logo">
+        <img src="/public/logo.png">
+      </a>
+      <ul class="tools">
+        <li><a href="https://www.northrbook.info" class="tool" data-label="Website">Website</a></li>
+        <li><a href="https://www.northbrook.info/my-account" class="tool" data-label="Account">Account</a></li>
+        <li><a href="http://ccsp.ent.sirsi.net/client/en_US/nbk/" class="tool" data-label="Catalog">Catalog</a></li>
+      </ul>
+    </div>
+  </header>
+
+  <main role="main">
+    <div class="container">
+      
+        <h1 class="large">Let&rsquo;s unlock your learning</h1>
+      
+      <form action="/login" method="post" class="form landing-page-form">
+  <input type="hidden" name="url" value="^U" />
+  <div class="form-control inline">
+    <label for="user">Barcode</label>
+    <input id="user" name="user" type="password" placeholder="Enter your library card number...">
+    <button type="submit" class="button">Submit</button>
+  </div>
+</form>
+
+
+    </div>
+  </main>
+
+  <footer role="contentinfo">
+    <div class="container">
+      
+        <div class="card-prompt">
+          <div class="card-info">
+            <h3>Don't have a card yet?</h3>
+            <p>Learn how you can get a library card and unlock your learning.</p>
+            <p><a href="https://www.northbrook.info/visit/use/cards">Learn more&rarr;</a></p>
+          </div>
+          <img src="public/card.png" class="lib-card">
+        </div>
+      
+    </div>
+  </footer>
+</body>
+</html>
