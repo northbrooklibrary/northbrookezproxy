@@ -2,10 +2,11 @@
 
 .logo{
   display: inline-block;
-  max-width: 10rem;
+  max-width: 8rem;
   margin-top: 1.5rem;
 
   @media screen and (min-width: $desktop-breakpoint){
+    max-width: 10rem;
     margin-top: 0;
   }
 

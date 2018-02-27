@@ -391,12 +391,12 @@ h1, h2, h3, h4, h5, h6 {
 
 h1 {
   margin-top: 0;
-  font-size: 1.9rem;
+  font-size: 1.5rem;
   font-weight: 900;
   color: #0074A0;
   letter-spacing: normal; }
   h1.large {
-    font-size: 3.5rem;
+    font-size: 3rem;
     text-align: center; }
     @media screen and (min-width: 50rem) {
       h1.large {
@@ -441,11 +441,14 @@ main a, aside a, footer a {
   position: relative;
   max-width: 64rem;
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   overflow: hidden; }
+  @media screen and (min-width: 50rem) {
+    .container {
+      padding: 2rem; } }
 
 main {
-  height: 60%; }
+  min-height: 60%; }
   main p {
     max-width: 60%; }
   main aside {
@@ -453,10 +456,11 @@ main {
 
 .logo {
   display: inline-block;
-  max-width: 10rem;
+  max-width: 8rem;
   margin-top: 1.5rem; }
   @media screen and (min-width: 50rem) {
     .logo {
+      max-width: 10rem;
       margin-top: 0; } }
   .logo img {
     max-width: 100%;
@@ -468,7 +472,7 @@ form {
     form {
       max-width: 60%; } }
   form.landing-page-form {
-    margin: auto; }
+    margin: 0 auto 2rem; }
 
 .form-control.inline {
   display: flex;

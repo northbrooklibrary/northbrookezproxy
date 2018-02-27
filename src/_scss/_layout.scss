@@ -2,12 +2,16 @@
   position: relative;
   max-width: #{$max-width};
   margin: auto;
-  padding: 2rem;
+  padding: 1rem;
   overflow: hidden;
+
+  @media screen and (min-width: $desktop-breakpoint){
+    padding: 2rem;
+  }
 }
 
 main{
-  height: 60%;
+  min-height: 60%;
 
   p{
     max-width: 60%;
