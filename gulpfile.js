@@ -1,7 +1,7 @@
 var gulp = require('gulp');
 var browserSync = require('browser-sync').create();
 var sass = require('gulp-sass');
-//var minifycss = require('gulp-minify-css');
+var cssnano = require('gulp-cssnano');
 //var prefix = require('gulp-autoprefixer');
 var cp = require('child_process');
 
@@ -61,6 +61,7 @@ gulp.task('sass', function () {
     }))
 
     .pipe(gulp.dest('dist/public'))
+    .pipe(cssnano())
     .pipe(browserSync.reload({stream:true}))
     .pipe(gulp.dest(config.css_path));
 });
