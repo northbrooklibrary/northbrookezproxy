@@ -35,14 +35,17 @@
   <main role="main">
     <div class="container">
       
-        <h1 class="large">Let&rsquo;s unlock your learning</h1>
+        <div class="page-header">
+          <h1 class="large">Let&rsquo;s unlock your learning</h1>
+          <p>Enter your Northbrook library card number to get started.</p>
+        </div>
       
       <form action="/login" method="post" class="form landing-page-form">
   <input type="hidden" name="url" value="^U" />
   <div class="form-control inline">
     <label for="user">Barcode</label>
     <input id="user" name="user" type="password" placeholder="Enter your library card number...">
-    <button type="submit" class="button">Submit</button>
+    <button type="submit" class="button" onclick="gtag('event', 'login');">Submit</button>
   </div>
 </form>
 

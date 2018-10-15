@@ -30,8 +30,8 @@ h1{
   letter-spacing: normal;
 
   &.large{
+    margin-bottom: .5rem;
     font-size: 3rem;
-    text-align: center;
 
     @media screen and (min-width: $desktop-breakpoint){
       font-size: 5rem;
